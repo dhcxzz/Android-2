@@ -9,10 +9,23 @@
         android:id="@+id/nav_movie"
         android:name="com.example.android_2.movie.MovieFragment"
         android:label="Movie"
-        tools:layout="@layout/fragment_movie" />
+        tools:layout="@layout/fragment_movie" >
+        <action
+            android:id="@+id/action_nav_movie_to_nav_detail"
+            app:destination="@id/nav_detail" />
+    </fragment>
     <fragment
         android:id="@+id/nav_favorite"
         android:name="com.example.android_2.favorite.FavoriteFragment"
         android:label="Favorite"
         tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.example.android_2.detail.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="movie"
+            app:argType="com.example.android_2.network.MovieProperty" />
+    </fragment>
 </navigation>
