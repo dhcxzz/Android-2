@@ -90,4 +90,5 @@ class MovieFragment : Fragment(R.layout.fragment_movie), MovieAdapter.OnItemClic
         val action = MovieFragmentDirections.actionNavMovieToNavDetail(movie)
         findNavController().navigate(action)
     }
+
 }
