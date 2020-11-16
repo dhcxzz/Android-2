@@ -39,7 +39,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                     .error(R.drawable.ic_error)
                     .listener(object : RequestListener<Drawable> {
                         override fun onLoadFailed(e: GlideException?, model: Any?, target: Target<Drawable>?, isFirstResource: Boolean): Boolean {
-                            progressBar.isVisible = false
+                            progressBar.isVisible = true
                             return false
                         }
 

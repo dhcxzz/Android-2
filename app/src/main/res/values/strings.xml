@@ -6,4 +6,6 @@
     <string name="data_not_found">Data tidak ditemukan</string>
     <string name="bottom_text_movie">Movie</string>
     <string name="bottom_text_favorite">Favorite</string>
+    <string name="poter_film">poter film</string>
+    <string name="favorite_tag">Add to Favorite</string>
 </resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "623992133601",
+    "firebase_url": "https://android-2-a31f3.firebaseio.com",
+    "project_id": "android-2-a31f3",
+    "storage_bucket": "android-2-a31f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623992133601:android:ab7538ebd9eb04c3b864a0",
+        "android_client_info": {
+          "package_name": "com.codinginflow.imagesearchapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "623992133601-o2u4k630es4ggpe9nckq77eb5tk8iehl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3pQPQH7H9dUSj4mD_vIon36afeBs3smE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "623992133601-o2u4k630es4ggpe9nckq77eb5tk8iehl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
