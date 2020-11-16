@@ -8,4 +8,6 @@
     <string name="bottom_text_favorite">Favorite</string>
     <string name="poter_film">poter film</string>
     <string name="favorite_tag">Add to Favorite</string>
+    <string name="eror_result">Result could not be loaded</string>
+    <string name="btn_retry_text">Retry</string>
 </resources>
