@@ -14,10 +14,10 @@ class FavoriteAdapter : RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>
 
     private lateinit var list : List<FavoriteMovieProperty>
 
-    private var onItemClickCallback: OnItemClickCallback? = null
+    private var onItemClickListenerFavorite: OnItemClickListenerFavorite? = null
 
-    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback){
-        this.onItemClickCallback = onItemClickCallback
+    fun setOnItemClickListener(onItemClickListenerFavorite: OnItemClickListenerFavorite){
+        this.onItemClickListenerFavorite = onItemClickListenerFavorite
     }
 
     fun setMovieList(list: List<FavoriteMovieProperty>){
@@ -37,7 +37,7 @@ class FavoriteAdapter : RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>
                     .error(R.drawable.ic_error)
                     .into(ivMoviePoster)
                 tvMovieTitle.text = favoriteMovie.original_title
-                binding.root.setOnClickListener { onItemClickCallback?.onItemClick(favoriteMovie) }
+                binding.root.setOnClickListener { onItemClickListenerFavorite?.onItemClick(favoriteMovie) }
             }
         }
 
@@ -55,7 +55,7 @@ class FavoriteAdapter : RecyclerView.Adapter<FavoriteAdapter.FavoriteViewHolder>
         holder.bind(list[position])
     }
 
-    interface OnItemClickCallback {
+    interface OnItemClickListenerFavorite {
         fun onItemClick(favoriteMovie: FavoriteMovieProperty)
     }
 }

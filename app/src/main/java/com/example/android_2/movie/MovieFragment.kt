@@ -17,7 +17,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_movie.*
 
 @AndroidEntryPoint
-class MovieFragment : Fragment(R.layout.fragment_movie), MovieAdapter.OnItemClickListener {
+class MovieFragment : Fragment(R.layout.fragment_movie), MovieAdapter.OnItemClickListenerMovie {
     private val viewModel by viewModels<MovieViewModel>()
     private var _binding: FragmentMovieBinding? = null
     private val binding get() = _binding!!

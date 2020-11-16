@@ -11,17 +11,17 @@ import com.example.android_2.R
 import com.example.android_2.databinding.ItemMovieBinding
 import com.example.android_2.network.MovieProperty
 
-class MovieAdapter(private  val listener : OnItemClickListener) : PagingDataAdapter<MovieProperty,MovieAdapter.MovieViewHolder>(COMPARATOR){
+class MovieAdapter(private  val listenerMovie : OnItemClickListenerMovie) : PagingDataAdapter<MovieProperty,MovieAdapter.MovieViewHolder>(COMPARATOR){
 
     inner class MovieViewHolder(private val binding: ItemMovieBinding)
         :RecyclerView.ViewHolder(binding.root){
         init{
-            binding.root.setOnClickListener{
+            binding.root.setOnClickListener(){
                 val position = bindingAdapterPosition
                 if(position != RecyclerView.NO_POSITION){
                     val item = getItem(position)
                     if (item!=null){
-                        listener.onItemCLick(item)
+                        listenerMovie.onItemCLick(item)
                     }
                 }
             }
@@ -64,7 +64,7 @@ class MovieAdapter(private  val listener : OnItemClickListener) : PagingDataAdap
         return MovieViewHolder(binding)
     }
 
-    interface OnItemClickListener{
+    interface OnItemClickListenerMovie{
         fun onItemCLick(movie:MovieProperty)
     }
 }
