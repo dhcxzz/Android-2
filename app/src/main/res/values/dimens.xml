@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="detail_width">300dp</dimen>
+    <dimen name="short_gap">8dp</dimen>
+    <dimen name="tv_desc_margin_vertical">50dp</dimen>
+    <dimen name="tv_desc_margin">10dp</dimen>
+    <dimen name="tv_title_desc">20sp</dimen>
+    <dimen name="btn_size">48dp</dimen>
+    <dimen name="cv_poster_desc_corner">15dp</dimen>
+    <dimen name="basic">0dp</dimen>
+    <dimen name="cv_desc_marginStart">16dp</dimen>
+    <dimen name="cv_desc_marginTop">32dp</dimen>
+    <dimen name="cv_desc_marginEnd">16dp</dimen>
+    <dimen name="textSize_movie_title">20sp</dimen>
+    <dimen name="tv_movie_title_margin">16dp</dimen>
+    <dimen name="movie_title_width">200dp</dimen>
+    <dimen name="margin_cardView_item">10dp</dimen>
+    <dimen name="cardView_height">120dp</dimen>
+    <dimen name="cardView_width">100dp</dimen>
+    <dimen name="item_corner_radius">20dp</dimen>
+    <dimen name="item_margin">20dp</dimen>
+</resources>

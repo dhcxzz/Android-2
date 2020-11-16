@@ -5,26 +5,25 @@
     android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="20dp"
-    android:layout_marginTop="20dp"
-    android:layout_marginRight="20dp"
-    app:cardCornerRadius="20dp">
+    android:layout_marginLeft="@dimen/item_margin"
+    android:layout_marginTop="@dimen/item_margin"
+    android:layout_marginRight="@dimen/item_margin"
+    app:cardCornerRadius="@dimen/item_corner_radius">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:elevation="16dp"
         android:background="#F1FAEE">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView_img"
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            app:cardCornerRadius="15dp"
+            android:layout_width="@dimen/cardView_width"
+            android:layout_height="@dimen/cardView_height"
+            android:layout_marginStart="@dimen/margin_cardView_item"
+            android:layout_marginTop="@dimen/margin_cardView_item"
+            android:layout_marginBottom="@dimen/margin_cardView_item"
+            app:cardCornerRadius="@dimen/cv_poster_desc_corner"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -42,15 +41,15 @@
 
         <TextView
             android:id="@+id/tv_movie_title"
-            android:layout_width="200dp"
+            android:layout_width="@dimen/movie_title_width"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/tv_movie_title_margin"
+            android:layout_marginEnd="@dimen/tv_movie_title_margin"
             android:background="@drawable/title_rounded"
             android:gravity="center"
-            android:padding="8dp"
+            android:padding="@dimen/short_gap"
             android:textColor="#FFF"
-            android:textSize="20sp"
+            android:textSize="@dimen/textSize_movie_title"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
