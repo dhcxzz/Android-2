@@ -19,7 +19,9 @@ class DetailsViewModel @ViewModelInject constructor(
                     movie.id,
                     movie.original_title,
                     movie.overview,
-                    movie.poster_path
+                    movie.poster_path,
+                    movie.vote_average,
+                    movie.release_date
                 )
             )
         }
